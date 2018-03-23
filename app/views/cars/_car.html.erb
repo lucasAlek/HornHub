@@ -1,0 +1,16 @@
+<div class="grid_item">
+  <h2><b><%= car.model %></b></h2>
+
+
+  <% if car.year_id%>
+    <h4> <%= car.year.year %></h4>
+  <% end %>
+
+  <% if car.make_id %>
+    <h4><%= car.make.make %></h4>
+  <% end %>
+
+
+  <h4><%= car.price %></h4>
+
+</div>

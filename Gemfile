@@ -36,6 +36,7 @@ gem 'jbuilder', '~> 2.5'
 gem "activeadmin"
 gem "devise"
 gem "faker"
+gem 'kaminari'
 
 
 group :development, :test do

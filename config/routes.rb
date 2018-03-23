@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  get 'car/index'
+  get 'cars/index'
 
-  get 'car/show'
+  get 'cars/show'
+
+  root to: "cars#index"
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
