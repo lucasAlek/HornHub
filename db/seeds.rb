@@ -22,19 +22,26 @@ json_file =  JSON.parse(open("#{Rails.root}/db/assets/json_data.json").read)
 #   owner.save
 # end
 
-# json_file.each do |file|
-#
-#   year = Year.new
-#   if(!Year.find_by year: file['year'])
-#     year.year = file['year']
-#     year.save
-#   end
-#
-#   car = Car.new
-#     car.make = file['make']
-#     car.model = file['model']
-#     car.year_id_id = Year.find_by_year(file['year']).id
-#     car.save
+json_file.each do |file|
 
-# end
+  year = Year.new
+  if(!Year.find_by year: file['year'])
+    year.year = file['year']
+    year.save
+  end
+
+  make = Make.new
+  if(!Make.find_by make: file['make'])
+     make.make = file['make']
+    make.save
+  end
+
+  car = Car.new
+    car.make = file['make']
+    car.model = file['model']
+    car.year_id = Year.find_by_year(file['year']).id
+
+    car.save
+
+end
 
