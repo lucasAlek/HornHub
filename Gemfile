@@ -37,6 +37,7 @@ gem "activeadmin"
 gem "devise"
 gem "faker"
 gem 'kaminari'
+gem 'rubocop'
 
 
 group :development, :test do
