@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   get 'cars', to:"cars#index", as: "cars"
 
   get 'cars/show'
+  get 'cars/alphabetized'
+  get 'cars/hasImage'
 
   root to: "cars#index"
 
