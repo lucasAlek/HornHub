@@ -39,6 +39,7 @@ gem "faker"
 gem 'kaminari'
 gem 'rubocop'
 gem 'carrierwave'
+gem 'semantic-ui-sass'
 
 
 group :development, :test do

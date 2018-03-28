@@ -1,15 +1,12 @@
 <header>
-  <nav>
-    <ul>
+  <nav class="ui secondary pointing menu">
       <% if current_page?(root_path) || current_page?("cars") %>
         <li>main page</li>
         <li><%= link_to "Alphabetized", "/cars/alphabetized" %></li>
         <li><%= link_to "Missing image", "customers/missing image" %></li>
         <% end %>
-      <li>main page</li>
-      <li><%= link_to "Alphabetized", "/cars/alphabetized" %></li>
-      <li><%= link_to "Missing image", "customers/missing image" %></li>
-    </ul>
-
+       <a class="item active">one and only page </a>
+      <%= link_to "Alphabetized", "/cars/alphabetized", class: "item"%>
+      <%= link_to "Missing image", "customers/missing image", class: "item" %>
   </nav>
 </header>

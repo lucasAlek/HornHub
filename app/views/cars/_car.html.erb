@@ -1,19 +1,22 @@
-<div class="grid_item">
-  <h2><b><%= car.model %></b></h2>
+<div class="card">
+  <div class="content">
+    <div class="header">
+      <h2><b><%= car.model %></b></h2>
+    </div>
+    <div class="description">
+      <% if car.year_id%>
+        <h4> <%= car.year.year %></h4>
+      <% end %>
 
+      <% if car.make_id %>
+        <h4><%= car.make.make %></h4>
+      <% end %>
 
-  <% if car.year_id%>
-    <h4> <%= car.year.year %></h4>
-  <% end %>
+      <% if car.image.present? %>
+        <p><%= image_tag car.image %></p>
+      <% end %>
 
-  <% if car.make_id %>
-    <h4><%= car.make.make %></h4>
-  <% end %>
-
-  <% if car.image.present? %>
-    <p><%= image_tag car.image %></p>
-  <% end %>
-
-  <h4><%= car.price %></h4>
-
+      <h4><%= car.price %></h4>
+    </div>
+  </div>
 </div>
