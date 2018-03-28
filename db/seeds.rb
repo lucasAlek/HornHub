@@ -12,10 +12,10 @@ require 'faker'
 
 json_file =  JSON.parse(open("#{Rails.root}/db/assets/json_data.json").read)
 
-Car.all.each do |car|
-  car.image = "/uploads/car/image/2/beepbeep.jpg"
-  car.save
-end
+# Car.all.each do |car|
+#   car.image = "/uploads/car/image/2/beepbeep.jpg"
+#   car.save
+# end
 
 # 10.times do
 #   owner = Owner.new
