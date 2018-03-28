@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'cars/index'
+  get 'cars', to:"cars#index", as: "cars"
 
   get 'cars/show'
 

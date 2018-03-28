@@ -38,6 +38,7 @@ gem "devise"
 gem "faker"
 gem 'kaminari'
 gem 'rubocop'
+gem 'carrierwave'
 
 
 group :development, :test do

@@ -11,5 +11,5 @@ ActiveAdmin.register Car do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
-permit_params :model, :make, :price
+permit_params :model, :make, :price, :image
 end

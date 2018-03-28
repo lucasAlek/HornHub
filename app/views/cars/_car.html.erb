@@ -10,6 +10,9 @@
     <h4><%= car.make.make %></h4>
   <% end %>
 
+  <% if car.image.present? %>
+    <p><%= image_tag car.image %></p>
+  <% end %>
 
   <h4><%= car.price %></h4>
 
