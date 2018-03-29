@@ -13,7 +13,7 @@
       <% end %>
 
       <% if car.image.present? %>
-        <p><%= image_tag car.image %></p>
+        <p><%= image_tag car.image.thumb %></p>
       <% end %>
 
       <h4><%= car.price %></h4>
