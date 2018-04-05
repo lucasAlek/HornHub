@@ -6,8 +6,12 @@ class CarsController < ApplicationController
   def show
   end
 
-  def alphabetized
-    @cars = Car.order(:make_id).page(params[:page])
+  def search
+    @query = params[:q]
+    @found_items = Year.where('year LIKE ?',"%#{@query}%")
+
+    @found_items = Car.order(:make_id).page(params[:page])
+
   end
 
   def hasImage

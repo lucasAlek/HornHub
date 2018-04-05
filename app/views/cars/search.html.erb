@@ -1,0 +1,10 @@
+<div class="ui  form">
+  <div class="field">
+        <%= select_tag "year_id", options_from_collection_for_select(Year.all, "id", "year"), class: "ui selection dropdown" %>
+  </div>
+      </div>
+<%= paginate @found_items %>
+<div class="ui cards fluid container">
+  <%= render @found_items %>
+</div>
+<%= paginate @found_items %>
