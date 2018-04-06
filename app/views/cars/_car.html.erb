@@ -1,7 +1,8 @@
 <div class="card">
   <div class="content">
     <div class="header">
-      <h2><b><%= car.model %></b></h2>
+
+     <h2><b><%= link_to car.model,cars_show_path %></b></h2>
     </div>
     <div class="description">
       <% if car.year_id%>
@@ -17,6 +18,7 @@
       <% end %>
 
       <h4><%= car.price %></h4>
+
     </div>
   </div>
 </div>

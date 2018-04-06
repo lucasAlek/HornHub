@@ -4,13 +4,19 @@ class CarsController < ApplicationController
   end
 
   def show
+    @cars = Car.find(params[:id])
   end
 
   def search
     @query = params[:q]
-    @found_items = Year.where('year LIKE ?',"%#{@query}%")
-
-    @found_items = Car.order(:make_id).page(params[:page])
+    if params[:category_id].blank?
+       # @found_items =  Car.where("year_id  LIKE ?',%#{@query}%")
+    else
+      car = Car.where(params[:year_id])
+      # @found_items = car
+    end
+    @found_items =  Car.all
+    #Car.order(:make_id).page(params[:page])
 
   end
 
