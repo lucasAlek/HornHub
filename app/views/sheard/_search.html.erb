@@ -1,0 +1,16 @@
+<% if current_page?(root_path) || current_page?('/cars') %>
+  <%= search_form_for @search do |field| %>
+      <%= field.condition_fields do |condition| %>
+          <div class="field">
+              <%= condition.attribute_fields do |attribute| %>
+                  <%= attribute.attribute_select associations: [:year] %>
+              <% end %>
+              <%= condition.predicate_select %>
+              <%= condition.value_fields do |value| %>
+                  <%= value.text_field :value %>
+              <% end %>
+          </div>
+      <% end %>
+      <div class="actions"><%= field.submit 'Search' %></div>
+  <% end %>
+<% end %>

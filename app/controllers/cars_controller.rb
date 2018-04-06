@@ -1,22 +1,16 @@
 class CarsController < ApplicationController
   def index
-    @cars = Car.order(:model).page(params[:page])
+    @search = Car.search(params[:q])
+    # @cars = Car.order(:model).page(params[:page])
+    @cars = @search.result.includes(:year).page(params[:page])
+    @search.build_condition
   end
 
   def show
-    @cars = Car.find(params[:id])
+    @car = Car.find(params[:id])
   end
 
   def search
-    @query = params[:q]
-    if params[:category_id].blank?
-       # @found_items =  Car.where("year_id  LIKE ?',%#{@query}%")
-    else
-      car = Car.where(params[:year_id])
-      # @found_items = car
-    end
-    @found_items =  Car.all
-    #Car.order(:make_id).page(params[:page])
 
   end
 
