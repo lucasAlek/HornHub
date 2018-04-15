@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5e7e8af-6abd-446e-a713-3f60b091a0c2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/sheard/_navbar.html.erb" afterPath="$PROJECT_DIR$/app/views/sheard/_navbar.html.erb" />
-    </list>
+    <list default="true" id="f5e7e8af-6abd-446e-a713-3f60b091a0c2" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -489,12 +485,12 @@
       <workItem from="1523026805947" duration="12928000" />
       <workItem from="1523545568566" duration="1825000" />
       <workItem from="1523547445958" duration="681000" />
-      <workItem from="1523557892100" duration="599000" />
+      <workItem from="1523557892100" duration="1229000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80069000" />
+    <option name="totallyTimeSpent" value="80699000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
