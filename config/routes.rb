@@ -5,11 +5,11 @@ Rails.application.routes.draw do
   #
   # get 'cars/show'
   # get 'cars/search'
-  # get 'cars/hasImage'
+  # get 'cars/has_image'
 
   resource :about, only:[:index]
   resources :cars
-  #resource :cars, only:[:index,:show,:search,:hasImage]
+  #resource :cars, only:[:index,:show,:search,:has_image]
 
   root to: "cars#index"
 

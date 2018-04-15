@@ -10,11 +10,10 @@ class CarsController < ApplicationController
     @car = Car.find(params[:id])
   end
 
-  def search
+  # def search
+  # end
 
-  end
-
-  def hasImage
-    @cars = Car.where(image: [nil?, ""]).order(:make_id).page(params[:page])
+  def has_image
+    @cars = Car.where(image: [nil?, '']).order(:make_id).page(params[:page])
   end
 end

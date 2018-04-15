@@ -3,12 +3,12 @@
     <% if current_page?(root_path) || current_page?('/cars') %>
       <%= link_to "Cars", root_path, class: "item active" %>
       <%= link_to "Search", "/cars/search", class: "item" %>
-      <%= link_to "has image", "/cars/hasImage", class: "item" %>
+      <%= link_to "has image", "/cars/has_image", class: "item" %>
       <%= link_to "About", about_path, class: "item" %>
     <% elsif current_page?(about_path) %>
       <%= link_to "Cars", root_path, class: "item" %>
       <%= link_to "Search", "/cars/search", class: "item" %>
-      <%= link_to "has image", "/cars/hasImage", class: "item" %>
+      <%= link_to "has image", "/cars/has_image", class: "item" %>
       <%= link_to "About", about_path, class: "item active" %>
     <% end %>
   </nav>
